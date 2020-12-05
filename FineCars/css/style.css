@@ -1,3 +1,4 @@
+@import "modal.css";
 body,
 h1,
 h2,
@@ -23,10 +24,11 @@ body {
   background-color: #e7e7e7;
   color: #222;
   -webkit-font-smoothing: antialiased;
+}
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 160px minmax(300px, 800px) 1fr;
 }
-
 .enhanceText {
   font-size: 140%;
 }
@@ -56,6 +58,10 @@ body {
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 0.1em;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
 }
 
 .grid-section {
@@ -178,7 +184,7 @@ body {
   font-weight: bold;
 }
 @media (max-width: 700px) {
-  body {
+  .grid-container {
     grid-template-columns: 1fr;
   }
   .menu,
