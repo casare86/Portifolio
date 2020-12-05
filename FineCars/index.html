@@ -14,7 +14,7 @@
     </script>
 </head>
 <body>
-    <nav class="menu js-menu" id="navBar">
+    <nav class="menu" data-menu="smooth" id="navBar">
         <ul>
             <li><a href="#cars"> Cars </a></li>
             <li><a href="#faq"> FAQ </a></li>
@@ -22,9 +22,9 @@
             <li><a href="https://github.com/casare86"> My Github→ </a></li>
         </ul>
     </nav>
-    <section class="grid-section cars js-scroll" id="cars">
+    <section class="grid-section cars" data-animation="scroll" id="cars">
         <h1 class="title"> Fine Cars </h1>
-        <ul class="cars-list js-tabMenu">
+        <ul class="cars-list" data-tab="menu">
             <li><img src="img/image1.jpg"></a></li>
             <li><img src="img/image2.jpg"></a></li>
             <li><img src="img/image3.jpg"></a></li>
@@ -32,8 +32,8 @@
             <li><img src="img/image5.jpg"></a></li>
             <li><img src="img/image6.jpg"></a></li>
         </ul>
-        <div class="car-description js-tabContent">
-            <section>
+        <div class="car-description" data-tab="content">
+            <section data-animation="show-right">
                 <h2>Car One</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat commodi nesciunt repellendus ea
@@ -55,7 +55,7 @@
                 </p>
                 <hr>
             </section>
-            <section>
+            <section data-animation="show-down">
                 <h2>Car Two</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat commodi nesciunt repellendus ea
@@ -79,7 +79,7 @@
                 </p>
                 <hr>
             </section>
-            <section>
+            <section data-animation="show-right">
                 <h2>Car Three</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam corporis voluptatem
@@ -104,7 +104,7 @@
                 </p>
                 <hr>
             </section>
-            <section>
+            <section data-animation="show-down">
                 <h2>Car Four</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat commodi nesciunt repellendus ea
@@ -132,7 +132,7 @@
                 <hr>
 
             </section>
-            <section>
+            <section data-animation="show-right">
                 <h2>Car Five</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat commodi nesciunt repellendus ea
@@ -160,7 +160,7 @@
                 </p>
                 <hr>
             </section>
-            <section>
+            <section data-animation="show-down">
                 <h2>Car Six</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat commodi nesciunt repellendus ea
@@ -192,9 +192,9 @@
             </section>
         </div>
     </section>
-    <section class="grid-section faq js-scroll" id="faq">
+    <section class="grid-section faq" data-animation="scroll" id="faq">
         <h1 class="title">FAQ</h1>
-        <dl class="faq-list js-accordion">
+        <dl class="faq-list" data-animation="accordion">
             <dt>What kind of precautions should I have with this cars?</dt>
             <dd>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse magni asperiores repellat, doloribus
@@ -225,7 +225,7 @@
             </dd>
         </dl>
     </section>
-    <section class="grid-section contact js-scroll" id="contact">
+    <section class="grid-section contact" data-animation="scroll" id="contact">
         <h1 class="title">Contact</h1>
         <div class="map">
             <img src="img/map.png" />
