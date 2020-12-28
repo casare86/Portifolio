@@ -1,15 +1,25 @@
-import * as menu from "./modules/menu.js";
-import initAnimateScroll from "./modules/scroll.js";
+import initSmoothScroll from './modules/scroll-smooth.js';
+import initAnimateScroll from './modules/scroll-animation.js';
 import initAccordion from "./modules/accordion.js";
+import initTabNav from "./modules/tabnav.js";
 import initModal from "./modules/modal.js";
-import initTooltip from "./modules/tooltip.js";
+import initDropDownMenu from "./modules/dropDownMenu.js";
+import initMenuMobile from './modules/menuMobile.js';
+import initWorkingHour from './modules/dateObject.js';
+import initFetchCars from './modules/fetchCars.js';
+import initFetchBiticoin from './modules/fetchBitcoin.js';
 
-menu.initSmoothScroll();
-menu.initTabNav();
-initAccordion();
-initAnimateScroll();
+
+initFetchBiticoin();
+initFetchCars();
 initModal();
-initTooltip();
+initSmoothScroll();
+initAnimateScroll();
+initAccordion();
+initTabNav();
+initDropDownMenu();
+initMenuMobile();
+initWorkingHour();
 
 
 
