@@ -1,4 +1,4 @@
-import initSmoothScroll from './modules/scroll-smooth.js';
+import SmoothScroll from './modules/scroll-smooth.js';
 import initAnimateScroll from './modules/scroll-animation.js';
 import initAccordion from "./modules/accordion.js";
 import initTabNav from "./modules/tabnav.js";
@@ -9,11 +9,12 @@ import initWorkingHour from './modules/dateObject.js';
 import initFetchCars from './modules/fetchCars.js';
 import initFetchBiticoin from './modules/fetchBitcoin.js';
 
+const scrollSuave = new SmoothScroll('[data-menu="smooth"] a[href^="#"]');
+scrollSuave.init();
 
 initFetchBiticoin();
 initFetchCars();
 initModal();
-initSmoothScroll();
 initAnimateScroll();
 initAccordion();
 initTabNav();
